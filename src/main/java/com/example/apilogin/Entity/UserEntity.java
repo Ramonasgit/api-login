@@ -1,2 +1,22 @@
-package com.example.apilogin.Entity;public class UserEntity {
+package com.example.apilogin.Entity;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class UserEntity {
+    private Long userId;
+    private String email;
+
+    @JsonIgnore
+    private String password;
+
+    private String role;
+
+    private String extraInfo;
+
+
+
 }
