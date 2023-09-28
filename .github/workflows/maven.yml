@@ -28,9 +28,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file api-login/pom.xml
+      run: mvn -B package --file pom.xml
 
-    - run: pwd & ls -al
+    - run: pwd && ls -al
   
     - run: mkdir download & cp target/*.jar download
     
